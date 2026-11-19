@@ -1,0 +1,412 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-18T12:30:00Z",
+  "title": "Design System: Justin Aitken — Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Daylight Ground",
+        "canonical": "oklch(0.985 0.004 220)",
+        "tonalRamp": [
+          "oklch(0.15 0.001 220)",
+          "oklch(0.26 0.004 220)",
+          "oklch(0.37 0.007 220)",
+          "oklch(0.48 0.008 220)",
+          "oklch(0.59 0.008 220)",
+          "oklch(0.70 0.007 220)",
+          "oklch(0.82 0.004 220)",
+          "oklch(0.95 0.001 220)"
+        ]
+      },
+      "surface-raised": {
+        "role": "neutral",
+        "displayName": "Paper White",
+        "canonical": "oklch(1 0 0)",
+        "tonalRamp": [
+          "oklch(0.15 0.000 0)",
+          "oklch(0.26 0.000 0)",
+          "oklch(0.37 0.000 0)",
+          "oklch(0.48 0.000 0)",
+          "oklch(0.59 0.000 0)",
+          "oklch(0.70 0.000 0)",
+          "oklch(0.82 0.000 0)",
+          "oklch(0.95 0.000 0)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(0.22 0.015 240)",
+        "tonalRamp": [
+          "oklch(0.15 0.002 240)",
+          "oklch(0.26 0.007 240)",
+          "oklch(0.37 0.013 240)",
+          "oklch(0.48 0.015 240)",
+          "oklch(0.59 0.015 240)",
+          "oklch(0.70 0.014 240)",
+          "oklch(0.82 0.008 240)",
+          "oklch(0.95 0.002 240)"
+        ]
+      },
+      "ink-body": {
+        "role": "neutral",
+        "displayName": "Body Ink",
+        "canonical": "oklch(0.40 0.014 240)",
+        "tonalRamp": [
+          "oklch(0.15 0.002 240)",
+          "oklch(0.26 0.007 240)",
+          "oklch(0.37 0.012 240)",
+          "oklch(0.48 0.014 240)",
+          "oklch(0.59 0.014 240)",
+          "oklch(0.70 0.013 240)",
+          "oklch(0.82 0.008 240)",
+          "oklch(0.95 0.002 240)"
+        ]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "oklch(0.50 0.012 240)",
+        "tonalRamp": [
+          "oklch(0.15 0.002 240)",
+          "oklch(0.26 0.006 240)",
+          "oklch(0.37 0.010 240)",
+          "oklch(0.48 0.012 240)",
+          "oklch(0.59 0.012 240)",
+          "oklch(0.70 0.011 240)",
+          "oklch(0.82 0.007 240)",
+          "oklch(0.95 0.002 240)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(0.90 0.006 230)",
+        "tonalRamp": [
+          "oklch(0.15 0.001 230)",
+          "oklch(0.26 0.004 230)",
+          "oklch(0.37 0.007 230)",
+          "oklch(0.48 0.008 230)",
+          "oklch(0.59 0.008 230)",
+          "oklch(0.70 0.007 230)",
+          "oklch(0.82 0.004 230)",
+          "oklch(0.95 0.001 230)"
+        ]
+      },
+      "rule-strong": {
+        "role": "neutral",
+        "displayName": "Strong Hairline",
+        "canonical": "oklch(0.82 0.008 230)",
+        "tonalRamp": [
+          "oklch(0.15 0.001 230)",
+          "oklch(0.26 0.004 230)",
+          "oklch(0.37 0.007 230)",
+          "oklch(0.48 0.008 230)",
+          "oklch(0.59 0.008 230)",
+          "oklch(0.70 0.007 230)",
+          "oklch(0.82 0.004 230)",
+          "oklch(0.95 0.001 230)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Ledger Green",
+        "canonical": "oklch(0.47 0.10 165)",
+        "tonalRamp": [
+          "oklch(0.15 0.016 165)",
+          "oklch(0.26 0.050 165)",
+          "oklch(0.37 0.084 165)",
+          "oklch(0.48 0.100 165)",
+          "oklch(0.59 0.100 165)",
+          "oklch(0.70 0.093 165)",
+          "oklch(0.82 0.056 165)",
+          "oklch(0.95 0.016 165)"
+        ]
+      },
+      "accent-ink": {
+        "role": "primary",
+        "displayName": "Deep Ledger Green",
+        "canonical": "oklch(0.38 0.09 165)",
+        "tonalRamp": [
+          "oklch(0.15 0.016 165)",
+          "oklch(0.26 0.050 165)",
+          "oklch(0.37 0.084 165)",
+          "oklch(0.48 0.100 165)",
+          "oklch(0.59 0.100 165)",
+          "oklch(0.70 0.093 165)",
+          "oklch(0.82 0.056 165)",
+          "oklch(0.95 0.016 165)"
+        ]
+      },
+      "accent-soft": {
+        "role": "primary",
+        "displayName": "Mint Wash",
+        "canonical": "oklch(0.945 0.03 165)",
+        "tonalRamp": [
+          "oklch(0.15 0.016 165)",
+          "oklch(0.26 0.050 165)",
+          "oklch(0.37 0.084 165)",
+          "oklch(0.48 0.100 165)",
+          "oklch(0.59 0.100 165)",
+          "oklch(0.70 0.093 165)",
+          "oklch(0.82 0.056 165)",
+          "oklch(0.95 0.016 165)"
+        ]
+      },
+      "data-negative": {
+        "role": "secondary",
+        "displayName": "Clay",
+        "canonical": "oklch(0.62 0.085 45)",
+        "tonalRamp": [
+          "oklch(0.15 0.013 45)",
+          "oklch(0.26 0.042 45)",
+          "oklch(0.37 0.071 45)",
+          "oklch(0.48 0.085 45)",
+          "oklch(0.59 0.085 45)",
+          "oklch(0.70 0.079 45)",
+          "oklch(0.82 0.048 45)",
+          "oklch(0.95 0.013 45)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name only, in the sticky intro column."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Featured project title; the contact sentence at weight 500."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Role line under the name; secondary project and timeline titles at 600."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Prose and project descriptions, 38rem measure."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Timeline descriptions, links rows, demo copy, status pill."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase section headings; the section nav at weight 500."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "The projected median number in the explainer."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Dates, tech stacks, ranges and factor values."
+      }
+    },
+    "shadows": [
+      {
+        "name": "instrument-lift",
+        "value": "0 1px 2px oklch(0.22 0.015 240 / 0.04), 0 12px 32px -12px oklch(0.22 0.015 240 / 0.12)",
+        "purpose": "The projection explainer panel only."
+      },
+      {
+        "name": "pressed-segment",
+        "value": "0 1px 2px oklch(0.22 0.015 240 / 0.1), 0 0 0 1px var(--rule)",
+        "purpose": "Active button in a segmented control."
+      }
+    ],
+    "focus": {
+      "value": "outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px",
+      "purpose": "Global :focus-visible ring."
+    },
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Every data change and the nav-rule growth."
+      },
+      {
+        "name": "data-change",
+        "value": "0.6s ease-out",
+        "purpose": "Projection band, median tick and factor bars on player switch."
+      },
+      {
+        "name": "nav-rule",
+        "value": "0.45s ease-out",
+        "purpose": "Section-nav leading rule grows 2rem to 4rem."
+      },
+      {
+        "name": "arrow-nudge",
+        "value": "0.3s ease-out",
+        "purpose": "Action-link arrow moves 2px up-right on hover."
+      },
+      {
+        "name": "color-state",
+        "value": "0.2s",
+        "purpose": "Link and control colour changes."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition-duration: 0s; scroll-behavior: auto",
+        "purpose": "Applied globally under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "single-column",
+        "value": "900px",
+        "purpose": "Grid collapses, intro un-sticks, nav hides, sticky frosted section headings and fixed contact pill appear."
+      },
+      {
+        "name": "narrow",
+        "value": "560px",
+        "purpose": "Timeline rows stack, factor names wrap, segmented control goes full width."
+      }
+    ],
+    "cssCustomProperties": {
+      "--bg": "ground",
+      "--bg-raised": "surface-raised",
+      "--ink": "ink",
+      "--ink-2": "ink-body",
+      "--ink-3": "ink-muted",
+      "--rule": "rule",
+      "--rule-strong": "rule-strong",
+      "--accent": "accent",
+      "--accent-ink": "accent-ink",
+      "--accent-soft": "accent-soft",
+      "--neg": "data-negative",
+      "--sans": "Schibsted Grotesk stack",
+      "--mono": "Red Hat Mono stack",
+      "--ease-out": "motion.ease-out",
+      "--space-section": "spacing.section"
+    }
+  },
+  "components": [
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": "text-link",
+      "description": "Inline prose link: ink with a hairline underline that warms to green on hover.",
+      "html": "<p class=\"ds-p\">At <a class=\"ds-link\" href=\"#\">UC Santa Cruz</a> studying computer science.</p>",
+      "css": ".ds-p{font-family:var(--sans);font-size:1.0625rem;line-height:1.65;color:var(--ink-2);margin:0} .ds-link{color:var(--ink);text-decoration-color:var(--rule-strong);text-underline-offset:.22em;text-decoration-thickness:1px;transition:color .2s,text-decoration-color .2s} .ds-link:hover{color:var(--accent-ink);text-decoration-color:var(--accent)} .ds-link:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}"
+    },
+    {
+      "name": "Action Link",
+      "kind": "custom",
+      "refersTo": "text-link",
+      "description": "Links-row action with a northeast arrow that nudges on hover.",
+      "html": "<a class=\"ds-action\" href=\"#\">Live app <svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M5 11 11 5M6 5h5v5\"/></svg></a>",
+      "css": ".ds-action{display:inline-flex;align-items:center;gap:.3rem;font-family:var(--sans);font-size:.9375rem;font-weight:500;color:var(--ink);text-decoration:none;transition:color .2s} .ds-action svg{width:.875rem;height:.875rem;transition:transform .3s cubic-bezier(0.16,1,0.3,1)} .ds-action:hover{color:var(--accent-ink)} .ds-action:hover svg{transform:translate(2px,-2px)} .ds-action:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}"
+    },
+    {
+      "name": "Status Pill",
+      "kind": "chip",
+      "refersTo": "status-pill",
+      "description": "Availability statement with a leading green dot.",
+      "html": "<p class=\"ds-status\">Seeking ML internships for Summer 2027</p>",
+      "css": ".ds-status{display:inline-flex;align-items:center;gap:.625rem;margin:0;font-family:var(--sans);font-size:.875rem;color:var(--accent-ink);background:var(--accent-soft);padding:.375rem .75rem .375rem .625rem;border-radius:999px} .ds-status::before{content:\"\";width:.5rem;height:.5rem;border-radius:50%;background:var(--accent)}"
+    },
+    {
+      "name": "Badge",
+      "kind": "chip",
+      "refersTo": "badge",
+      "description": "Inline honest-status badge after a project title.",
+      "html": "<h3 class=\"ds-h3\">Snapcount <span class=\"ds-badge\">In progress</span></h3>",
+      "css": ".ds-h3{font-family:var(--sans);font-size:1.375rem;font-weight:600;letter-spacing:-0.02em;line-height:1.25;color:var(--ink);margin:0} .ds-badge{font-size:.75rem;font-weight:500;color:var(--accent-ink);background:var(--accent-soft);padding:.125rem .5rem;border-radius:999px;margin-left:.25rem;vertical-align:.15em;letter-spacing:0}"
+    },
+    {
+      "name": "Stack Chips",
+      "kind": "chip",
+      "refersTo": "stack-chip",
+      "description": "Mono tech-stack chips on Paper White with a hairline border.",
+      "html": "<ul class=\"ds-stack\"><li>Python</li><li>FastAPI</li><li>SvelteKit</li></ul>",
+      "css": ".ds-stack{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.375rem .5rem} .ds-stack li{font-family:var(--mono);font-size:.75rem;color:var(--ink-2);border:1px solid var(--rule);background:var(--bg-raised);padding:.125rem .5rem;border-radius:4px}"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "button",
+      "refersTo": "segmented-control",
+      "description": "Player switch inside the projection explainer; pressed state lifts to Paper White.",
+      "html": "<div class=\"ds-seg\" role=\"group\" aria-label=\"Example player\"><button type=\"button\" aria-pressed=\"true\">WR</button><button type=\"button\" aria-pressed=\"false\">RB</button><button type=\"button\" aria-pressed=\"false\">QB</button></div>",
+      "css": ".ds-seg{display:inline-flex;padding:3px;background:var(--bg);border:1px solid var(--rule);border-radius:8px;gap:2px} .ds-seg button{font:500 .8125rem/1 var(--sans);color:var(--ink-3);background:transparent;border:0;border-radius:6px;padding:.5rem .875rem;cursor:pointer;min-width:3rem;transition:background .2s,color .2s} .ds-seg button:hover{color:var(--ink)} .ds-seg button[aria-pressed=\"true\"]{background:var(--bg-raised);color:var(--ink);box-shadow:0 1px 2px oklch(0.22 0.015 240 / 0.1),0 0 0 1px var(--rule)} .ds-seg button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}"
+    },
+    {
+      "name": "Section Nav",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sticky-column section nav; the leading rule grows on hover and for the section in view.",
+      "html": "<nav class=\"ds-toc\"><a href=\"#\" aria-current=\"true\">About</a><a href=\"#\">Work</a><a href=\"#\">Experience</a></nav>",
+      "css": ".ds-toc{display:grid;gap:.25rem} .ds-toc a{display:inline-flex;align-items:center;gap:1rem;padding:.5rem 0;font-family:var(--sans);font-size:.8125rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);text-decoration:none} .ds-toc a::before{content:\"\";height:1px;width:2rem;background:currentColor;opacity:.55;transition:width .45s cubic-bezier(0.16,1,0.3,1),opacity .3s} .ds-toc a:hover,.ds-toc a[aria-current=\"true\"]{color:var(--ink)} .ds-toc a:hover::before,.ds-toc a[aria-current=\"true\"]::before{width:4rem;opacity:1} .ds-toc a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}"
+    },
+    {
+      "name": "Timeline Row",
+      "kind": "custom",
+      "description": "Hairline-divided experience/education row with a mono date column.",
+      "html": "<ol class=\"ds-rows\"><li><span class=\"ds-when\">Jul 2026 – now</span><div><h3>Web Developer Intern <span>Bella Baby Photography (remote)</span></h3><p>Building features for an internal learning platform.</p></div></li></ol>",
+      "css": ".ds-rows{list-style:none;margin:0;padding:0;font-family:var(--sans);color:var(--ink-2)} .ds-rows li{display:grid;grid-template-columns:8.5rem minmax(0,1fr);gap:1.5rem;padding:1.5rem 0;border-bottom:1px solid var(--rule)} .ds-when{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:.8125rem;color:var(--ink-3);padding-top:.25rem} .ds-rows h3{margin:0;font-size:1.0625rem;font-weight:600;letter-spacing:-0.01em;line-height:1.35;color:var(--ink)} .ds-rows h3 span{display:block;color:var(--ink-2);font-weight:400} .ds-rows p{margin:.5rem 0 0;font-size:.9375rem;line-height:1.65}"
+    },
+    {
+      "name": "Projection Explainer",
+      "kind": "card",
+      "refersTo": "demo-panel",
+      "description": "Signature instrument: the only raised, shadowed panel; median figure, interval scale and diverging factor bars.",
+      "html": "<figure class=\"ds-demo\"><div class=\"ds-demo-top\">How a projection is explained</div><div class=\"ds-demo-body\"><div class=\"ds-num\"><span class=\"ds-big\">14.2</span><span class=\"ds-unit\">projected PPR points</span></div><div class=\"ds-scale\"><div class=\"ds-track\"></div><div class=\"ds-band\"></div><div class=\"ds-tick\"></div></div><div class=\"ds-factor\"><span>Target share</span><span class=\"ds-bar\"><span class=\"ds-fill\"></span></span><span class=\"ds-val\">+3.1</span></div><div class=\"ds-factor\"><span>Opponent pass defense</span><span class=\"ds-bar\"><span class=\"ds-fill ds-neg\"></span></span><span class=\"ds-val\">−1.4</span></div></div><figcaption class=\"ds-note\"><strong>Synthetic example.</strong> Not model results.</figcaption></figure>",
+      "css": ".ds-demo{margin:0;font-family:var(--sans);background:var(--bg-raised);border:1px solid var(--rule);border-radius:12px;box-shadow:0 1px 2px oklch(0.22 0.015 240 / 0.04),0 12px 32px -12px oklch(0.22 0.015 240 / 0.12);overflow:hidden} .ds-demo-top{padding:1rem 1.25rem;border-bottom:1px solid var(--rule);font-size:.875rem;font-weight:600;color:var(--ink)} .ds-demo-body{padding:1.5rem 1.25rem 1.25rem;display:grid;gap:1rem} .ds-num{display:flex;align-items:baseline;gap:.75rem} .ds-big{font-family:var(--mono);font-size:2.5rem;font-weight:500;color:var(--ink);letter-spacing:-0.04em;line-height:1;font-variant-numeric:tabular-nums} .ds-unit{font-size:.875rem;color:var(--ink-3)} .ds-scale{position:relative;height:1.5rem} .ds-track{position:absolute;left:0;right:0;top:.5rem;height:.5rem;background:var(--bg);border:1px solid var(--rule);border-radius:999px} .ds-band{position:absolute;top:.5rem;height:.5rem;left:20%;width:34%;background:var(--accent);opacity:.28;border-radius:999px} .ds-tick{position:absolute;top:.0625rem;left:35%;width:2px;height:1.375rem;background:var(--accent-ink);border-radius:1px} .ds-factor{display:grid;grid-template-columns:minmax(0,11rem) minmax(0,1fr) 3.25rem;align-items:center;gap:.875rem;font-size:.875rem;color:var(--ink-2)} .ds-bar{position:relative;height:.625rem} .ds-bar::before{content:\"\";position:absolute;left:50%;top:-.25rem;bottom:-.25rem;width:1px;background:var(--rule-strong)} .ds-fill{position:absolute;top:0;bottom:0;left:50%;width:50%;border-radius:2px;background:var(--accent);transform-origin:left;transform:scaleX(1);transition:transform .6s cubic-bezier(0.16,1,0.3,1)} .ds-fill.ds-neg{left:0;background:var(--neg);transform-origin:right;transform:scaleX(.47)} .ds-val{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right;color:var(--ink);font-size:.8125rem} .ds-note{padding:.875rem 1.25rem;background:var(--bg);border-top:1px solid var(--rule);font-size:.8125rem;color:var(--ink-3);line-height:1.5} .ds-note strong{color:var(--ink-2);font-weight:500}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Plain Ledger",
+    "overview": "A daylight page that reads like a well-kept record: a near-white ground with the faintest cool tint, near-black ink, and one deep green that marks only what is interactive or what carries data. The form is the category-standard developer portfolio played straight: a sticky left column holding identity, status, in-page navigation and social links, and a wider right column where the path prose and the work lead. Nothing is staged; credibility comes from finish, alignment and honest labels.\n\nDensity is calm and editorial. Structure is drawn with hairline rules and whitespace, not boxes; the only true container on the page is the projection explainer, which earns its panel because it is an instrument rather than a section. Type does almost all the hierarchy work with a single grotesk across every role, while a monospace face is reserved for the things a reader scans as data: dates, stacks and numbers.\n\nMotion is small and functional: one long ease-out curve drives every data change and the nav-rule growth, and all of it collapses under reduced-motion. The system rejects AI-glow theatrics (neon, glowing networks, gradients) and the hero + skills grid + equal-card-row template.",
+    "keyCharacteristics": [
+      "Two-column sticky-intro layout that collapses to one column at 900px.",
+      "One accent hue (deep green, 165) used for links on hover, focus, status and data marks.",
+      "Hairline rules as structure; one shadowed panel on the whole page.",
+      "One sans family for all text; mono only for dates, stacks and figures.",
+      "Pills for status, rounded-4px chips for stacks, 12px corners only on the demo panel."
+    ],
+    "rules": [
+      {
+        "name": "The One Green Rule",
+        "body": "Green appears only where something is interactive, focused, or is data. It never decorates a heading, a section or a background block.",
+        "section": "colors"
+      },
+      {
+        "name": "The Wash-Under-Ink Rule",
+        "body": "Green text always sits on Mint Wash or Daylight Ground, and Mint Wash always carries Deep Ledger Green text, never Ledger Green or Ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Mono-Means-Data Rule",
+        "body": "Red Hat Mono is set only on dates, tech-stack names and numbers. Prose, headings and buttons are always the grotesk.",
+        "section": "typography"
+      },
+      {
+        "name": "The Small-Caps-Are-Headings Rule",
+        "body": "Uppercase tracked text is reserved for section headings and the section nav. It is the heading itself, never a label stacked above another heading.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Panel Rule",
+        "body": "Sections, projects and timeline entries are separated by hairlines, never boxed. A raised, shadowed panel is reserved for an interactive instrument.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do separate sections, projects and rows with 1px Hairline rules and whitespace.",
+      "Do keep green for interaction, focus, status and data; text in green is always Deep Ledger Green.",
+      "Do set dates, stacks and numbers in Red Hat Mono with tabular numerals, and everything else in Schibsted Grotesk.",
+      "Do cap reading measures at 38rem.",
+      "Do animate only state and data changes, on `cubic-bezier(0.16, 1, 0.3, 1)`, and drop all transitions under reduced motion.",
+      "Do label status honestly with the pill or badge, and label illustrative data inside the component that shows it."
+    ],
+    "donts": [
+      "Don't box sections or projects in cards; the raised panel is reserved for an interactive instrument.",
+      "Don't add shadows outside the projection explainer.",
+      "Don't use neon, glows, gradients or glowing-network imagery.",
+      "Don't build the hero + skills grid + equal-card-row template.",
+      "Don't put an uppercase label above a heading; uppercase tracked text is the section heading itself.",
+      "Don't use Clay for text or UI chrome; it marks negative data only."
+    ]
+  }
+}
