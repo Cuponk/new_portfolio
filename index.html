@@ -30,8 +30,49 @@
     --sans: "Schibsted Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
     --mono: "Red Hat Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
+    --shadow: oklch(0.22 0.015 240);
+    --bar-bg: oklch(0.985 0.004 220 / 0.9);
+    color-scheme: light;
+
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
     --space-section: clamp(4.5rem, 8vw, 6rem);
+  }
+  /* Dark theme: same hues, lightness flipped. Applies when chosen, or when the OS prefers dark and nothing was chosen. */
+  :root[data-theme="dark"] {
+    --bg: oklch(0.17 0.012 240);
+    --bg-raised: oklch(0.215 0.013 240);
+    --ink: oklch(0.95 0.005 230);
+    --ink-2: oklch(0.80 0.010 235);
+    --ink-3: oklch(0.68 0.012 235);
+    --rule: oklch(0.29 0.012 235);
+    --rule-strong: oklch(0.40 0.012 235);
+    --accent: oklch(0.72 0.12 165);
+    --accent-ink: oklch(0.82 0.11 165);
+    --accent-soft: oklch(0.28 0.05 165);
+    --neg: oklch(0.70 0.10 45);
+    --neg-soft: oklch(0.28 0.04 45);
+    --shadow: oklch(0 0 0);
+    --bar-bg: oklch(0.17 0.012 240 / 0.9);
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: oklch(0.17 0.012 240);
+      --bg-raised: oklch(0.215 0.013 240);
+      --ink: oklch(0.95 0.005 230);
+      --ink-2: oklch(0.80 0.010 235);
+      --ink-3: oklch(0.68 0.012 235);
+      --rule: oklch(0.29 0.012 235);
+      --rule-strong: oklch(0.40 0.012 235);
+      --accent: oklch(0.72 0.12 165);
+      --accent-ink: oklch(0.82 0.11 165);
+      --accent-soft: oklch(0.28 0.05 165);
+      --neg: oklch(0.70 0.10 45);
+      --neg-soft: oklch(0.28 0.04 45);
+      --shadow: oklch(0 0 0);
+      --bar-bg: oklch(0.17 0.012 240 / 0.9);
+      color-scheme: dark;
+    }
   }
 
   *, *::before, *::after { box-sizing: border-box; }
@@ -112,6 +153,16 @@
   .social a { display: inline-flex; color: var(--ink-3); padding: .25rem; margin: -.25rem; }
   .social a:hover { color: var(--ink); }
   .social svg { width: 1.375rem; height: 1.375rem; }
+  .theme-toggle { margin-left: auto; display: inline-flex; align-items: center; justify-content: center; width: 2.25rem; height: 2.25rem; padding: 0; border: 1px solid var(--rule); border-radius: 999px; background: transparent; color: var(--ink-3); cursor: pointer; transition: color .2s, border-color .2s; }
+  .theme-toggle:hover { color: var(--ink); border-color: var(--rule-strong); }
+  .theme-toggle svg { width: 1.125rem; height: 1.125rem; }
+  .theme-toggle .moon { display: none; }
+  :root[data-theme="dark"] .theme-toggle .sun { display: none; }
+  :root[data-theme="dark"] .theme-toggle .moon { display: block; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .theme-toggle .sun { display: none; }
+    :root:not([data-theme="light"]) .theme-toggle .moon { display: block; }
+  }
 
   main { padding: clamp(4rem, 9vh, 6.5rem) 0 4rem; min-width: 0; }
   section + section { margin-top: var(--space-section); }
@@ -150,7 +201,7 @@
     background: var(--bg-raised);
     border: 1px solid var(--rule);
     border-radius: 12px;
-    box-shadow: 0 1px 2px oklch(0.22 0.015 240 / 0.04), 0 12px 32px -12px oklch(0.22 0.015 240 / 0.12);
+    box-shadow: 0 1px 2px oklch(from var(--shadow) l c h / 0.04), 0 12px 32px -12px oklch(from var(--shadow) l c h / 0.12);
     overflow: hidden;
   }
   .demo-top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; padding: 1rem 1.25rem; border-bottom: 1px solid var(--rule); }
@@ -162,7 +213,7 @@
     transition: background .2s, color .2s;
   }
   .seg button:hover { color: var(--ink); }
-  .seg button[aria-pressed="true"] { background: var(--bg-raised); color: var(--ink); box-shadow: 0 1px 2px oklch(0.22 0.015 240 / 0.1), 0 0 0 1px var(--rule); }
+  .seg button[aria-pressed="true"] { background: var(--bg-raised); color: var(--ink); box-shadow: 0 1px 2px oklch(from var(--shadow) l c h / 0.1), 0 0 0 1px var(--rule); }
 
   .demo-body { padding: 1.5rem 1.25rem 1.25rem; display: grid; gap: 1.75rem; }
   .proj-num { display: flex; align-items: baseline; gap: .75rem; flex-wrap: wrap; }
@@ -221,7 +272,7 @@
       position: sticky; top: 0; z-index: 2;
       margin: 0 calc(-1 * clamp(1.5rem, 5vw, 4rem)) 1.5rem;
       padding: 1rem clamp(1.5rem, 5vw, 4rem);
-      background: oklch(0.985 0.004 220 / 0.9);
+      background: var(--bar-bg);
       backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
     }
   }
@@ -239,6 +290,9 @@
     *, *::before, *::after { transition-duration: 0s !important; }
   }
 </style>
+<script>
+  try { const t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -267,6 +321,10 @@
       <a href="https://www.linkedin.com/in/justinaitken/" aria-label="LinkedIn (opens in new tab)" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
       </a>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark theme">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+      </button>
     </div>
   </header>
 
@@ -500,6 +558,21 @@
   }
   addEventListener("scroll", onScroll, { passive: true });
   onScroll();
+
+  // Theme toggle: follows the OS until the visitor picks one, then remembers it
+  const root = document.documentElement;
+  const toggle = $("theme-toggle");
+  const dark = matchMedia("(prefers-color-scheme: dark)");
+  const isDark = () => root.dataset.theme ? root.dataset.theme === "dark" : dark.matches;
+  const label = () => toggle.setAttribute("aria-label", isDark() ? "Switch to light theme" : "Switch to dark theme");
+  toggle.addEventListener("click", () => {
+    const next = isDark() ? "light" : "dark";
+    root.dataset.theme = next;
+    try { localStorage.setItem("theme", next); } catch (e) {}
+    label();
+  });
+  dark.addEventListener("change", label);
+  label();
 })();
 </script>
 </body>
